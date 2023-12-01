@@ -11,6 +11,9 @@ pub const gpa = gpa_impl.allocator();
 
 // Add utility functions here
 
+/// Given relative path from CWD, reads entire file into buffer. Caller is responsible for
+/// freeing allocated memory of returned buffer.
+
 // Useful stdlib functions
 const tokenizeAny = std.mem.tokenizeAny;
 const tokenizeSeq = std.mem.tokenizeSequence;
